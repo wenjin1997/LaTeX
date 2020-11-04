@@ -51,3 +51,43 @@
     6 & 2.6870597850598585 & 1.5652561930721185 & 3.336816135191078e-11  \\
 \end{longtable}
 ```
+### 配置展示python代码
+展示python代码用`lstlisting`，配置代码如下：
+```
+\documentclass{article}
+\usepackage{ctex}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left, % 设置为none则不显示行号
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+\begin{document}
+
+下面是python代码。
+\begin{lstlisting}
+    print("Hello World!)
+\end{lstlisting}
+
+\end{document}
+```
