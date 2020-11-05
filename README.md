@@ -8,7 +8,16 @@
 ### 笔记
 * 在编译源文件时，LaTeX将忽略命令之后的所有空格，如果希望在命令后保留一个空格，
 可在命令后紧跟一对空花括号{}和一个空格，或在命令后紧跟一个反斜杠\和一个空格。
-
+### 摘要与关键词
+```
+\begin{abstract}
+	\noindent %摘要无缩进
+	{\bf 摘{} 要：}
+	{\small 摘要内容}
+	\newline %另起一行
+	\textbf{关键词：}第一个关键词、第二个关键词、第三个关键词
+\end{abstract}
+```
 ### 展示方程组
 如果要展示方程组，则可以放在case中，如下所示。同时一定要调用宏包amsmath。
 ```
@@ -88,6 +97,7 @@
 \begin{lstlisting}
     print("Hello World!)
 \end{lstlisting}
+
 
 \end{document}
 ```
