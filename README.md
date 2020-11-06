@@ -101,3 +101,28 @@
 
 \end{document}
 ```
+### 参考文献
+* 新建bib文件夹，在bib文件夹下新建sample.bib文档，文档内容如下。主要是自己要引用的参考文献内容。
+```
+%# -*- coding: utf-8-unix -*-
+
+@Book{numerical_1,
+  Title                    = {现代数值计算方法},
+  Address                  = {北京},
+  Author                   = {马昌凤 and 林伟川},
+  Publisher                = {科学出版社},
+  Year                     = {2008},
+  Month                    = {6}
+}
+
+@Book{numerical_2,
+  Title                    = {数值分析},
+  Address                  = {北京},
+  Author                   = {钟尔杰 and 黄廷祝},
+  Publisher                = {高等教育出版社},
+  Year                     = {2004},
+  Month                    = {7}
+}
+```
+* 在文中需要引用参考文献的地方`\cite{}`
+* 在主目录下要包括四个文件
